@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-1. [How to Run?](#how-to-run?)
+1. [How to Run?](#how-to-run)
 2. [Tech Stack](#tech-stack)
 3. [Mockups](#mockups)
 4. [Design](#design)
