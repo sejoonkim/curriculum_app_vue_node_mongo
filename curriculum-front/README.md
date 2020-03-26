@@ -138,7 +138,7 @@
 - TopNav.vue
 
   - ```html
-    <v-btn *href*="#/" *text*></v-btn>
+    <v-btn href="#/" text></v-btn>
     ```
 
     The "pound" sign means that the links will not move the application to other page.
@@ -192,6 +192,81 @@
 - styling
 - Vuetify - [Expansion panels](https://vuetifyjs.com/en/components/expansion-panels/#expansion-panels)
 - Vuetify - [Lists](https://vuetifyjs.com/en/components/lists/#lists)
+
+<br/>
+
+### Mock .json Generator
+
+- [Mockaroo](https://mockaroo.com/)
+- curriculum-front >> src >> data >> curricula.json
+
+<br/>
+
+### Modify and Create views
+
+- Home.vue >> DisplayCurricula.vue
+- create Home.vue
+- modify router.js
+- modify TopNav.js
+- upsertCurriculum >> CreateCurriculum
+
+<br/>
+
+### Modify DisplayCurricula.vue
+
+- import mock .json
+
+  - > @/data/curricula.json
+    >
+    > @ stands for source directory
+
+- JSON.parse() - [Link](https://www.w3schools.com/js/js_json_parse.asp)
+
+  - Data received from a web server is STRING
+  - need to parse STRING witj JSON.parse()
+  - It becomes Javascript Object
+
+- v-for directive with v-bind:key
+
+  - ```html
+    <v-card
+      outlined
+      v-for="curriculum in curriculaData"
+      v-bind:key="curriculum.id"
+    >
+      <v-card-title class="headline">{{ curriculum.name }}</v-card-title>
+      <v-card-subtitle>{{ curriculum.description }}</v-card-subtitle></v-card
+    >
+    ```
+
+- make each row clickable
+
+  - just make TITLE clickable
+
+  - need routing
+    - [Vue Router-link](https://router.vuejs.org/guide/#html)
+  - curricula/id style
+  - DisplayCurriculum.vue
+    - use :id from URL
+      - pull matching data object
+
+<br/>
+
+### Vuex
+
+- manages globally used data
+  - ex) curricula.json, and its 10 objects
+- Map state -> [Link](https://vuex.vuejs.org/guide/state.html)
+  - inside computed: {}
+
+<br/>
+
+### Get :id off of URL
+
+- DisplayCurriculum.vue
+  - [Dynamic Route Matching](https://router.vuejs.org/guide/essentials/dynamic-matching.html#reacting-to-params-changes)
+- After mounted, get the matching curriculum object, save it to data, and use it to draw page
+  - [Lifecycle Diagram](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram)
 
 <br/>
 <br/>
