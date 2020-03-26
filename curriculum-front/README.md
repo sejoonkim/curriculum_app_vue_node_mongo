@@ -47,7 +47,11 @@
 
 <br/>
 
-### Add Components, Routes
+### Add Views, Routes
+
+- Views vs Components
+
+  - views are pages, components include UI components
 
 - views/
 
@@ -86,9 +90,10 @@
 
 - To use Vuetify
 
-  - <v-app> > <div id="app">
+- <v-app> > <div id="app">
 
 - **TIP**
+
   - initiate Vuetify right after **creating** the app
 
 <br/>
@@ -115,12 +120,48 @@
   - it is a partial, convention for Sass files
 
 - index.js
-
   - import index.sass
+- \_general.sass
+  - add styles
+
+<br/>
+
+### Create Nav Bar
+
+- TopNav.vue
+
+  - > <v-btn _href_="#/" _text_>
+
+    - The "pound" sign means that the links will not move the application to other page.
+    - [Concept of SPA](https://stackoverflow.com/questions/51718195/pound-sign-on-vue-router-links)
 
 - \_general.sass
 
-  - add styles
+<br/>
+
+### Modify Home Page
+
+- [Vuetify v-card](https://vuetifyjs.com/en/components/cards/#outlined-cards)
+
+- App.vue
+
+  - > <v-content>
+    >
+    > ​ <v-container>
+
+- [Vuetify v-grid](https://vuetifyjs.com/en/components/grids/#grid-system)
+
+  - offset
+
+- custom styling
+
+  - create \_home.sass
+
+<br/>
+
+### Modify UpsertCurriculum.vue
+
+- [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
 
 <br/>
 <br/>
