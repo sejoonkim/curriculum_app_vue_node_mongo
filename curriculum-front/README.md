@@ -163,6 +163,20 @@
 
 - [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
 
+- dynamic list
+
+  - copy the structure from Home.vue
+
+- add horizontal row
+
+  - > <<hr />>
+
+- styling
+
+<br/>
+
+### Modify DisplayCurriculum.vue
+
 <br/>
 <br/>
 <br/>
