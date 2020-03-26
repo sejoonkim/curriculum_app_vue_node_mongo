@@ -68,7 +68,9 @@
 
   - modify
 
-    - > <router-link to="/something">Create</router-link>
+    - ```html
+      <router-link to="/something">Create</router-link>
+      ```
 
 - components/HelloWorld.vue
 
@@ -90,7 +92,12 @@
 
 - To use Vuetify
 
-- <v-app> > <div id="app">
+- ```html
+  <v-app>
+    >
+    <div id="app"></div
+  ></v-app>
+  ```
 
 - **TIP**
 
@@ -130,10 +137,13 @@
 
 - TopNav.vue
 
-  - > <v-btn _href_="#/" _text_>
+  - ```html
+    <v-btn *href*="#/" *text*></v-btn>
+    ```
 
-    - The "pound" sign means that the links will not move the application to other page.
-    - [Concept of SPA](https://stackoverflow.com/questions/51718195/pound-sign-on-vue-router-links)
+    The "pound" sign means that the links will not move the application to other page.
+
+  - [Concept of SPA](https://stackoverflow.com/questions/51718195/pound-sign-on-vue-router-links)
 
 - \_general.sass
 
@@ -145,9 +155,9 @@
 
 - App.vue
 
-  - > <v-content>
-    >
-    > ​ <v-container>
+  - ```html
+    <v-content> <v-container></v-container></v-content>
+    ```
 
 - [Vuetify v-grid](https://vuetifyjs.com/en/components/grids/#grid-system)
 
@@ -169,13 +179,19 @@
 
 - add horizontal row
 
-  - > <<hr />>
+  - ```html
+    <hr />
+    ```
 
 - styling
 
 <br/>
 
 ### Modify DisplayCurriculum.vue
+
+- styling
+- Vuetify - [Expansion panels](https://vuetifyjs.com/en/components/expansion-panels/#expansion-panels)
+- Vuetify - [Lists](https://vuetifyjs.com/en/components/lists/#lists)
 
 <br/>
 <br/>
