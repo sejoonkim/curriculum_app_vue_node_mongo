@@ -94,7 +94,7 @@
 
 - ```html
   <v-app>
-    >
+    then
     <div id="app"></div
   ></v-app>
   ```
@@ -287,12 +287,8 @@
 - add router link to v-btn
 
   - ```html
-    <v-btn @click="$router.push('/curricula/create')"> </v-btn>
+    <v-btn @click="$router.push('/curricula/create')"></v-btn>
     ```
-
-  - why router.push()?
-
-    - going to chain GET, POST
 
 <br/>
 <br/>
