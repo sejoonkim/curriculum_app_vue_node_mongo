@@ -269,6 +269,32 @@
   - [Lifecycle Diagram](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram)
 
 <br/>
+
+### Modify DisplayCurriculum.vue2
+
+- v-for on checkboxes
+
+<br/>
+
+### \*Order of Routes
+
+- the routes order should be from most accessible to less accessible
+
+<br/>
+
+### Modify DisplayCurricula.vue2
+
+- add router link to v-btn
+
+  - ```html
+    <v-btn @click="$router.push('/curricula/create')"> </v-btn>
+    ```
+
+  - why router.push()?
+
+    - going to chain GET, POST
+
+<br/>
 <br/>
 <br/>
 

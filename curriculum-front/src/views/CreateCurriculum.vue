@@ -27,7 +27,7 @@
 
         <v-row>
           <v-col cols="12">
-            <v-label>Desceiption</v-label>
+            <v-label>Description</v-label>
             <v-textarea solo name="description" />
           </v-col>
         </v-row>
