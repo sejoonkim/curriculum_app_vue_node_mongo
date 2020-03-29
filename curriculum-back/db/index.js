@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost:27017/curriculumapp", {
+  useUnifiedTopology: true,
   useNewUrlParser: true
 });
 
-const Cat = mongoose.model("Cat", { name: String });
+const Curriculum = mongoose.model("Curriculum", { name: String });
 
-const kitty = new Cat({ name: "Zildjian" });
-kitty.save().then(() => console.log("meow"));
+const curriculum = new Curriculum({ name: "JavaScript" });
+curriculum.save().then(() => console.log("curriculum saved"));

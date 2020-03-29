@@ -31,3 +31,27 @@
 <br/>
 
 ## MongoDB, Mongoose
+
+- Mongo automatically adds "id"
+
+- import db to node app
+
+  - server/index.js
+    - require("../db");
+    - the db runs
+
+- check mongo shell
+
+  - > show dbs
+
+    - db list is shown in terminal
+
+  - > use curriculumapp // determine which db that I am going to use
+
+    > db // current database that I am looking at
+
+    > show collections // curriculums
+    >
+    > db.curriculums.find() // logs db
+
+  - > exit // to exit
