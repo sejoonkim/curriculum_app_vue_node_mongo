@@ -55,3 +55,46 @@
     > db.curriculums.find() // logs db
 
   - > exit // to exit
+
+<br/>
+
+### Add Schema to DB
+
+- Mongoose Schema -> [Link](https://mongoosejs.com/docs/guide.html)
+
+- > new Schema({"Pass Object"})
+
+- npm mongoose-timestamp
+
+  - [Link](https://www.npmjs.com/package/mongoose-timestamp)
+
+- saving arrays in MongoDB
+
+  - ```javascript
+    sections: [
+      {
+        name: {
+          type: String,
+          required: true
+        },
+        resources: [String],
+        projects: [String]
+      }
+    ];
+    ```
+
+<br/>
+
+### Connect DB to routes
+
+- module-alias: [Link](https://www.npmjs.com/package/module-alias)
+
+  - easy route names
+  - like Vue.js @ that directs to source directory
+
+- YARC! Yet Another REST Client
+  - check API requests
+- How to access req.body?
+  - [Link](https://stackoverflow.com/questions/11625519/how-to-access-the-request-body-when-posting-using-node-js-and-express)
+  - no need to install `body-parser`
+- create async-await functions for GET, and POST requests at "/"

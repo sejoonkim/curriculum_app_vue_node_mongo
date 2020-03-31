@@ -4,7 +4,8 @@ mongoose.connect("mongodb://localhost:27017/curriculumapp", {
   useNewUrlParser: true
 });
 
-const Curriculum = mongoose.model("Curriculum", { name: String });
+const Curriculum = require("./Curriculum");
 
-const curriculum = new Curriculum({ name: "JavaScript" });
-curriculum.save().then(() => console.log("curriculum saved"));
+module.exports = {
+  Curriculum
+};

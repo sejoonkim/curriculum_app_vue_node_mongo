@@ -1,1 +1,3 @@
-const server = require("./server");
+require("module-alias/register");
+
+require("./server");
